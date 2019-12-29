@@ -1,0 +1,21 @@
+.home-top {
+  position: relative;
+  width: 100%;
+}
+
+.home-top a:first-child {
+  width: 100%;
+}
+
+.home-top a:first-child img {
+  width: 100%;
+}
+
+.home-top a:nth-child(2) img {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 100px;
+  height: 38px;
+}
+/*# sourceMappingURL=home.css.map */
