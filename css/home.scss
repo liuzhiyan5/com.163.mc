@@ -1,23 +1,439 @@
+@keyframes film {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    9.09% {
+        transform: translate(-100%, 0);
+    }
+
+    18.18% {
+        transform: translate(-100% * 2, 0);
+    }
+
+    27.27% {
+        transform: translate(-100% * 3, 0);
+    }
+
+    36.36% {
+        transform: translate((-100% * 4), 0);
+    }
+
+    45.45% {
+        transform: translate((-100% * 5), 0);
+    }
+
+    54.54% {
+        transform: translate((-100% * 6), 0);
+    }
+
+    63.63% {
+        transform: translate((-100% * 7), 0);
+    }
+
+    72.72% {
+        transform: translate((-100% * 8), 0);
+    }
+
+    81.81% {
+        transform: translate((-100% * 9), 0);
+    }
+
+    90.9% {
+        transform: translate((-100% * 10), 0);
+    }
+
+    100% {
+        transform: translate((-100% * 11), 0);
+    }
+}
+
+body {
+    background-color: #000;
+}
+
 // 首页头部开始
-.home-top {
+header {
     position: relative;
     width: 100%;
 
-    a:first-child {
+    .bottom-picture {
         width: 100%;
-
-        img {
-            width: 100%;
-        }
     }
 
     a:nth-child(2) {
+        position: absolute;
+        top: 11px;
+        left: 11px;
+        width: 100px;
+        height: 38px;
+
         img {
-            position: absolute;
-            top: 11px;
-            left: 11px;
-            width: 100px;
-            height: 38px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    a:nth-child(3) {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 97px;
+        height: 39px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    div {
+        position: absolute;
+        top: 73px;
+        left: 50%;
+        width: 281px;
+        height: 121px;
+        margin-left: calc(-281px / 2);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    a:nth-child(5) {
+        position: absolute;
+        top: 205px;
+        left: 50%;
+        width: 253px;
+        height: 39px;
+        margin-left: calc(-253px / 2);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    a:nth-child(6) {
+        display: block;
+        position: absolute;
+        bottom: 39px;
+        left: 50%;
+        color: #fff;
+        font-size: 12px;
+        text-decoration: underline;
+        margin-left: calc(-84px / 2);
+    }
+
+    a:nth-child(7) {
+        position: absolute;
+        bottom: 63px;
+        left: 50%;
+        width: 137px;
+        height: 45px;
+        margin-left: calc(-137px / 2);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// 首页头部结束
+
+// 游戏特色开始
+.features {
+    position: relative;
+    width: 100%;
+    height: 335px;
+    background-image: url(../images/home/features.jpg);
+    background-size: 100%;
+    overflow: hidden;
+
+    .rotation {
+        width: calc(100% * 12);
+        height: 171px;
+        margin-top: 100px;
+
+        li {
+            float: left;
+            width: calc(100% / 12);
+            height: 100%;
+            animation-name: film;
+            animation-duration: 24s;
+            animation-timing-function: steps(1);
+            animation-iteration-count: infinite;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .small-square {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        overflow: hidden;
+        margin-left: calc(-96px / 2);
+        padding: 2px 0;
+
+        li {
+            float: left;
+            width: 6px;
+            height: 6px;
+            background-color: #abb8d1;
+            margin: 0 5px;
+
+            &:nth-child(1)::after {
+                display: block;
+                content: '';
+                position: relative;
+                top: -2px;
+                left: -2px;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #83ce8b;
+                background-color: #3dc321;
+            }
+        }
+    }
+
+    .arrow-left {
+        position: absolute;
+        bottom: 134px;
+        left: 15px;
+        width: 26px;
+        height: 26px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+    }
+
+    .arrow-right {
+        position: absolute;
+        bottom: 134px;
+        right: 15px;
+        width: 26px;
+        height: 26px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg);
+    }
+}
+
+// 特色游戏结束
+
+// 首页底部开始
+footer {
+    width: 100%;
+    background-image: url(../images/home/footer.jpg);
+    background-size: 100%;
+    padding-top: 67px;
+
+    a:nth-child(1) {
+        display: block;
+        width: 179px;
+        height: 33px;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .shareBox {
+        width: 100%;
+        text-align: center;
+
+        a:nth-child(1),
+        a:nth-child(2),
+        a:nth-child(3) {
+            display: inline-block;
+            width: 75px;
+            height: 90px;
+            margin: 46px 8px;
+            margin-bottom: 40px;
+
+            img {
+                width: 44px;
+                height: 44px;
+            }
+
+            span {
+                display: block;
+                color: #ededed;
+                font-size: 10px;
+                line-height: 16px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .emailBox {
+        width: 100%;
+        color: #808080;
+        font-size: 12px;
+
+        p {
+            display: inline-block;
+            margin-left: 13px;
+            margin-bottom: 24px;
+        }
+
+        a {
+            float: right;
+            color: #808080;
+            text-decoration: underline;
+            margin-right: 14px;
+        }
+    }
+
+    .qqbox {
+        width: 100%;
+        text-align: center;
+        color: #cacaca;
+        padding-bottom: 26px;
+
+        p {
+            background-image: url(../images/home/home13.png);
+            background-size: 100% 6px;
+            background-position: 0 6px;
+            background-repeat: no-repeat;
+            margin: 0 10px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            display: inline-block;
+            width: 108px;
+            height: 23px;
+            color: #bbf5b5;
+            font-size: 10px;
+            line-height: 23px;
+            background: rgba(48, 114, 40, .7);
+            border: 1px solid rgba(58, 167, 45, .7);
+            margin: 5px 3px;
+        }
+
+        .more {
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+
+            .well {
+                min-height: 20px;
+                padding: 0;
+                margin-bottom: 0;
+                background-color: transparent;
+                border: none;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            }
+
+            i {
+                position: relative;
+                width: 100%;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 12px;
+                    top: 50%;
+                    width: 128px;
+                    height: 1px;
+                    background-color: #3c3c3c;
+                }
+
+                img {
+                    width: 12px;
+                    height: 8px;
+                }
+
+                h5 {
+                    display: inline-block;
+                    font-size: 12px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    width: 128px;
+                    height: 1px;
+                    background-color: #3c3c3c;
+                }
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 0;
+                font-size: 14px;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+            }
+
+            .btn-primary {
+                color: #cacaca;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .phonebox {
+        width: 100%;
+        background-color: rgba(73, 73, 73, .7);
+        overflow: hidden;
+
+        a {
+            float: left;
+            display: block;
+            width: 43px;
+            height: 44px;
+            color: #a8a8a8;
+            font-size: 12px;
+            text-align: center;
+            background-image: url(../images/home/home15.png);
+            background-size: 100%;
+            padding-top: 4px;
+            margin: 0;
+            margin-left: 22px;
+
+            &:nth-child(3) {
+                line-height: 44px;
+                padding: 0;
+            }
+
+            &:nth-child(4) {
+                line-height: 44px;
+                padding: 0;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        span {
+            color: #a8a8a8;
         }
     }
 }
