@@ -48,6 +48,14 @@
     }
 }
 
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 314px;
+        height: 314px;
+        margin: auto;
+    }
+}
+
 body {
     background-color: #000;
 }
@@ -124,9 +132,11 @@ header {
         font-size: 12px;
         text-decoration: underline;
         margin-left: calc(-84px / 2);
+        padding: 0;
+        background-color: transparent;
     }
 
-    a:nth-child(7) {
+    a:last-child {
         position: absolute;
         bottom: 63px;
         left: 50%;
@@ -268,7 +278,7 @@ footer {
                 display: block;
                 color: #ededed;
                 font-size: 10px;
-                line-height: 16px;
+                line-height: 20px;
                 margin-top: 10px;
             }
         }
@@ -414,7 +424,8 @@ footer {
             background-size: 100%;
             padding-top: 4px;
             margin: 0;
-            margin-left: 22px;
+            margin-left: 20px;
+            margin-top: 12px;
 
             &:nth-child(3) {
                 line-height: 44px;
@@ -433,7 +444,146 @@ footer {
         }
 
         span {
+            float: left;
             color: #a8a8a8;
+            font-size: 10px;
+            padding: 20px 12px;
         }
     }
+}
+
+// 首页底部结束
+
+// 题外话开始
+.bottom {
+    width: 100%;
+    color: #6e6e6e;
+    padding: 20px 16px;
+
+    p {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+}
+
+// 题外话结束
+
+// 模态框开始
+.btn:hover {
+    background: none;
+    color: #000;
+    border: none;
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-primary:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.modal {
+    padding-top: 174px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal.in .modal-dialog {
+    background-image: url(../images/home/reg-bg.png);
+    background-size: 354px 314px;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.modal-content span img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.modal-content {
+    height: 314px;
+}
+
+.modal-header .modal-title img {
+    width: 106px;
+    height: 26px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: transparent;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: none;
+}
+
+.modal-body {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.modal-body input {
+    width: 244px;
+    height: 42px;
+    border: 1px solid #cbd2de;
+    margin-bottom: 16px;
+}
+
+.modal-body input::placeholder {
+    color: #c4c4c4;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.modal-body button {
+    width: 244px;
+    height: 42px;
+    color: #fafdf9;
+    font-size: 18px;
+    background-color: #28bd09;
+    border: none;
+}
+
+.modal-content .check {
+    position: absolute;
+    bottom: 58px;
+    left: 38px;
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    margin: 0;
+}
+
+.modal-content p {
+    display: inline-block;
+    color: #a9a9a9;
+    font-size: 11px;
+}
+
+.modal-content .first {
+    position: absolute;
+    bottom: 48px;
+    left: 76px;
+}
+
+.modal-content .second {
+    position: absolute;
+    bottom: 29px;
+    left: 53px;
 }

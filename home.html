@@ -28,11 +28,41 @@
         <a href="javascript:;">
             <img src="./images/home/brand-new.png">
         </a>
-        <a href="javascript:;">注册网易通行证</a>
+        <a data-toggle="modal" data-target="#myModal">
+            注册网易通行证
+        </a>
+
+        <!-- Modal -->
+
+
         <a href="javascript:;">
             <img src="./images/home/mobile- games.png">
         </a>
     </header>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        <img src="./images/home/registration.png">
+                    </h4>
+                </div>
+                <span aria-hidden="true">
+                    <img src="./images/home/cha.png">
+                </span>
+                <div class="modal-body">
+                    <input type="text" placeholder="邮箱账号">
+                    <input type="text" placeholder="6-16为密码，区分大小写">
+                    <button>下一步</button>
+                </div>
+                <p class="first">我同意《服务条款》和《隐私保护和个人信息</p>
+                <p class="second">利用政策》</p>
+                <input type="checkbox" class="check">
+            </div>
+        </div>
+    </div>
 
     <!-- 游戏特色 -->
     <div class="features">
@@ -120,23 +150,23 @@
         </div>
         <div class="qqbox">
             <p>点击进入官方Q群</p>
-            <span>1群(496458302)</span>
-            <span>2群(149928952)</span>
-            <span>3群(548243501)</span>
-            <span>4群(653481897)</span>
-            <span>5群(656353334)</span>
-            <span>6群(658163191)</span>
+            <span>1群 (496458302)</span>
+            <span>2群 (149928952)</span>
+            <span>3群 (548243501)</span>
+            <span>4群 (653481897)</span>
+            <span>5群 (656353334)</span>
+            <span>6群 (658163191)</span>
             <div class="more">
                 <div class="collapse" id="collapseExample">
                     <div class="well">
-                        <span>7群(659271511)</span>
-                        <span>8群(660196551)</span>
-                        <span>9群(414624148)</span>
-                        <span>10群(570158684)</span>
-                        <span>11群(473075431)</span>
-                        <span>12群(566273486)</span>
-                        <span>13群(600377726)</span>
-                        <span>14群(677602705)</span>
+                        <span>7群 (659271511)</span>
+                        <span>8群 (660196551)</span>
+                        <span>9群 (414624148)</span>
+                        <span>10群 (570158684)</span>
+                        <span>11群 (473075431)</span>
+                        <span>12群 (566273486)</span>
+                        <span>13群 (600377726)</span>
+                        <span>14群 (677602705)</span>
                     </div>
                 </div>
                 <i class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample"
@@ -165,6 +195,22 @@
             </span>
         </div>
     </footer>
+
+    <!-- 题外话 -->
+    <div class="bottom">
+        <p>网易公司版权所有 ©1997-2019</p>
+        <p>网易集团隐私政策及儿童个人信息保护规则</p>
+        <p>《网络文化经营许可证》</p>
+        <p>《网络游戏管理暂行办法》</p>
+        <p>沪网文[2016]3825-278号</p>
+        <p>ISBN 978-7-7979-8877-3</p>
+        <p>文网游进字〔2017〕0072 号（端游）</p>
+        <p>文网游进字〔2017〕0074 号 （手游）</p>
+        <p>违法及不良信息举报中心</p>
+        <p>ICP备案：粤B2-20090191-18</p>
+        <p>本游戏适合9岁以上年龄段玩家</p>
+        <p>点击查看家长关爱平台</p>
+    </div>
 </body>
 <script src="./js/jquery-1.12.4.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>
