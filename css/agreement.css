@@ -1,0 +1,676 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background-image: url(../images/agreement/top-bg.jpg);
+}
+
+header a:first-child {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  width: 100px;
+  height: 38px;
+}
+
+header a:first-child img {
+  width: 100%;
+  height: 100%;
+}
+
+header a:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 50px;
+}
+
+header a:last-child img {
+  width: 100%;
+  height: 65px;
+  z-index: 1;
+}
+
+.backbox {
+  width: 100%;
+  height: 50px;
+  background-image: url(../images/agreement/backBg.jpg);
+  background-size: 100%;
+}
+
+.backbox a {
+  display: block;
+  float: left;
+  width: 15px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.backbox a img {
+  width: 100%;
+  height: 100%;
+}
+
+.backbox .navswrap {
+  float: left;
+  height: 100%;
+  font-size: 12px;
+  line-height: 50px;
+  margin-left: 24px;
+}
+
+.backbox .navswrap span {
+  padding: 0 1px;
+}
+
+.backbox .navswrap span:nth-child(2n) {
+  font-weight: 700;
+}
+
+.backbox .last1 {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: calc((50px / 2) - 15px);
+  margin-right: 28px;
+}
+
+.backbox .last2 {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: calc((50px / 2) - 15px);
+  margin-right: 8px;
+}
+
+main {
+  width: 100%;
+  padding: 0 13px;
+}
+
+main .subject {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 28px;
+}
+
+main .subject h1 {
+  color: #249f0b;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+main .subject p {
+  color: #999;
+  margin-top: 6px;
+}
+
+main .preface {
+  width: 100%;
+}
+
+main .preface h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .preface p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+main .preface p:nth-child(2) {
+  margin: 22px 0;
+  margin-top: 24px;
+}
+
+main .preface p:nth-child(3) {
+  line-height: 26px;
+}
+
+main .important {
+  width: 100%;
+}
+
+main .important h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .important p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .important p:nth-child(3) {
+  color: #ff0000;
+}
+
+main .sign {
+  width: 100%;
+}
+
+main .sign h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .sign p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .sign p:nth-child(2) {
+  margin: 22px 0;
+  margin-top: 24px;
+}
+
+main .definition {
+  width: 100%;
+}
+
+main .definition h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .definition p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+main .definition p:nth-child(2) {
+  margin: 22px 0;
+  margin-top: 24px;
+}
+
+main .account {
+  width: 100%;
+}
+
+main .account h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .account p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .account p:nth-child(2), main .account p:nth-child(4) {
+  margin: 22px 0;
+  margin-top: 24px;
+}
+
+main .account p:nth-child(3) {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main .knowledge {
+  width: 100%;
+}
+
+main .knowledge h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .knowledge p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .knowledge p:nth-child(2), main .knowledge p:nth-child(8) {
+  margin: 22px 0;
+  margin-top: 24px;
+}
+
+main .restriction {
+  width: 100%;
+}
+
+main .restriction h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+main .restriction p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .restriction p:nth-child(28), main .restriction p:nth-child(30), main .restriction p:nth-child(31) {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main .cost {
+  width: 100%;
+}
+
+main .cost h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .cost p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+main .cost p:nth-child(10), main .cost p:nth-child(14) {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main .protect {
+  width: 100%;
+}
+
+main .protect h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .protect p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .interrupt {
+  width: 100%;
+}
+
+main .interrupt h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .interrupt p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .interrupt p:nth-child(-n+4), main .interrupt p:nth-last-child(-n+8) {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main .link {
+  width: 100%;
+}
+
+main .link h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .link p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .change {
+  width: 100%;
+}
+
+main .change h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .change p {
+  width: 100%;
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .data {
+  width: 100%;
+}
+
+main .data h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .data p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .notice {
+  width: 100%;
+}
+
+main .notice h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .notice p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .other {
+  width: 100%;
+}
+
+main .other h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main .other p {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+main .other p:nth-child(2) {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+footer {
+  width: 100%;
+  background-image: url(../images/home/footer.jpg);
+  background-size: 100%;
+  padding-top: 67px;
+}
+
+footer a:nth-child(1) {
+  display: block;
+  width: 179px;
+  height: 33px;
+  margin: 0 auto;
+}
+
+footer a:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .shareBox {
+  width: 100%;
+  text-align: center;
+}
+
+footer .shareBox a:nth-child(1),
+footer .shareBox a:nth-child(2),
+footer .shareBox a:nth-child(3) {
+  display: inline-block;
+  width: 75px;
+  height: 90px;
+  margin: 46px 8px;
+  margin-bottom: 40px;
+}
+
+footer .shareBox a:nth-child(1) img,
+footer .shareBox a:nth-child(2) img,
+footer .shareBox a:nth-child(3) img {
+  width: 44px;
+  height: 44px;
+}
+
+footer .shareBox a:nth-child(1) span,
+footer .shareBox a:nth-child(2) span,
+footer .shareBox a:nth-child(3) span {
+  display: block;
+  color: #ededed;
+  font-size: 10px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+footer .emailBox {
+  width: 100%;
+  color: #808080;
+  font-size: 12px;
+}
+
+footer .emailBox p {
+  display: inline-block;
+  margin-left: 13px;
+  margin-bottom: 24px;
+}
+
+footer .emailBox a {
+  float: right;
+  color: #808080;
+  text-decoration: underline;
+  margin-right: 14px;
+}
+
+footer .qqbox {
+  width: 100%;
+  text-align: center;
+  color: #cacaca;
+  padding-bottom: 26px;
+}
+
+footer .qqbox p {
+  background-image: url(../images/home/home13.png);
+  background-size: 100% 6px;
+  background-position: 0 6px;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+
+footer .qqbox span {
+  display: inline-block;
+  width: 108px;
+  height: 23px;
+  color: #bbf5b5;
+  font-size: 12px;
+  line-height: 23px;
+  background: rgba(48, 114, 40, 0.7);
+  border: 1px solid rgba(58, 167, 45, 0.7);
+  margin: 5px 3px;
+}
+
+footer .qqbox .more {
+  width: 100%;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer .qqbox .more .well {
+  min-height: 20px;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+footer .qqbox .more i {
+  position: relative;
+  width: 100%;
+}
+
+footer .qqbox .more i::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  width: 128px;
+  height: 1px;
+  background-color: #3c3c3c;
+}
+
+footer .qqbox .more i img {
+  width: 12px;
+  height: 8px;
+}
+
+footer .qqbox .more i h5 {
+  display: inline-block;
+  font-size: 12px;
+}
+
+footer .qqbox .more i::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 128px;
+  height: 1px;
+  background-color: #3c3c3c;
+}
+
+footer .qqbox .more .btn {
+  display: inline-block;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+footer .qqbox .more .btn-primary {
+  color: #cacaca;
+  background-color: transparent;
+}
+
+footer .phonebox {
+  width: 100%;
+  background-color: rgba(73, 73, 73, 0.7);
+  overflow: hidden;
+}
+
+footer .phonebox a {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 44px;
+  color: #a8a8a8;
+  font-size: 12px;
+  text-align: center;
+  background-image: url(../images/home/home15.png);
+  background-size: 100%;
+  padding-top: 4px;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+footer .phonebox a:nth-child(3) {
+  line-height: 44px;
+  padding: 0;
+}
+
+footer .phonebox a:nth-child(4) {
+  line-height: 44px;
+  padding: 0;
+}
+
+footer .phonebox a:nth-child(4) img {
+  width: 20px;
+  height: 20px;
+}
+
+footer .phonebox span {
+  float: left;
+  color: #a8a8a8;
+  font-size: 10px;
+  padding: 20px 12px;
+}
+
+.bottom {
+  width: 100%;
+  color: #6e6e6e;
+  padding: 20px 16px;
+  background-color: #050607;
+}
+
+.bottom p {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+/*# sourceMappingURL=agreement.css.map */
