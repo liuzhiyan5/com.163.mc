@@ -6,165 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./lib/normalize.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <style>
-        .btn {
-            color: #000;
+        div {
             font-size: 12px;
-            text-decoration: underline;
+            padding: 0 14px;
         }
 
-        .btn:hover {
-            background: none;
-            color: #000;
-            border: none;
-            text-decoration: underline;
-            box-shadow: none;
-        }
-
-        .btn-primary {
-            background-color: transparent;
-            border-color: transparent;
-        }
-
-        .btn-primary:focus {
-            background-color: transparent;
-            border-color: transparent;
-        }
-
-        .modal.in .modal-dialog {
-            background-image: url(./images/home/reg-bg.png);
-            background-size: 314px 314px;
-        }
-
-        .modal-header {
-            min-height: 16.43px;
-            padding: 15px;
-            border-bottom: none;
-            text-align: center;
-        }
-
-        .modal-content span img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 16px;
-            height: 16px;
-        }
-
-        .modal-header .modal-title img {
-            width: 106px;
-            height: 26px;
-        }
-
-        .modal-content {
-            position: relative;
-            background-color: transparent;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
-            border: none;
-            border-radius: 6px;
-            outline: 0;
-            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-            box-shadow: none;
-        }
-
-        .modal-body {
-            text-align: center;
-            padding-top: 10px;
-        }
-
-        .modal-body input {
-            width: 244px;
-            height: 42px;
-            border: 1px solid #cbd2de;
-            margin-bottom: 16px;
-        }
-
-        .modal-body input::placeholder {
-            color: #c4c4c4;
-            font-size: 13px;
-            padding-left: 10px;
-        }
-
-        .modal-body button {
-            width: 244px;
-            height: 42px;
-            color: #fafdf9;
-            font-size: 18px;
-            background-color: #28bd09;
+        .nav-tabs {
             border: none;
         }
 
-        .modal-content .check {
-            position: absolute;
-            bottom: -17px;
-            left: 18px;
-            display: inline-block;
-            width: 50px;
-            height: 18px;
+        .nav-tabs li {
+            margin-right: 55px;
+        }
+
+        .nav-tabs li:last-child {
             margin: 0;
         }
 
-        .modal-content p {
+        .nav-tabs li a {
+            display: block;
+            position: relative;
+            color: #262626;
+            padding: 10px 6px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+        }
+
+        .nav-tabs li a::after {
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            display: block;
+            display: none;
+            content: '';
+            width: 52px;
+            height: 4px;
+            background-image: url(./images/official/tab-on.png);
+            background-size: 100%;
+        }
+
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:focus,
+        .nav-tabs>li.active>a:hover {
+            color: #19931d;
+            cursor: default;
+            background-color: #fff;
+            border: none;
+            border-bottom-color: transparent;
+        }
+
+        .nav-tabs li.active a,
+        .nav-tabs li.active a:focus,
+        .nav-tabs li.active a:hover::after {
+            display: block;
+        }
+
+        .tab-content {
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .tab-content p {
+            position: relative;
+            background-color: #f5f7f9;
+            margin-bottom: 2px;
+        }
+
+        .tab-content .one {
             display: inline-block;
-            color: #a9a9a9;
-            font-size: 11px;
+            width: 51px;
+            height: 32px;
+            color: #fff;
+            line-height: 32px;
+            text-align: center;
+            background-color: #28bd09;
         }
 
-        .modal-content .first {
+        .tab-content .one::after {
+            content: '';
+            border: 6px solid #28bd09;
             position: absolute;
-            bottom: -26px;
-            left: 56px;
+            left: 50px;
+            top: 10px;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
         }
 
-        .modal-content .second {
-            position: absolute;
-            bottom: -44px;
-            left: 34px;
+        .tab-content b {
+            margin-left: 4px;
         }
 
-        @media (min-width: 768px) {
-            .modal-dialog {
-                width: 314px;
-                height: 314px;
-                margin: 30px auto;
-            }
+        .tab-content ul {
+            margin-bottom: 0;
+            overflow: hidden;
+        }
+
+        .tab-content ul li img {
+            width: 5px;
+            height: 8px;
+            margin-right: 6px;
+        }
+
+        .tab-content ul li {
+            float: left;
+            width: 302px;
+            height: 32px;
+            line-height: 32px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+
+        .tab-content ul span {
+            float: right;
+            color: #d1d1d1;
+            line-height: 32px;
+        }
+
+        .tab-pane {
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
-    <a href="javascript:;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        注册网易通行证
-    </a>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">
-                        <img src="./images/home/registration.png">
-                    </h4>
-                </div>
-                <span aria-hidden="true">
-                    <img src="./images/home/cha.png">
-                </span>
-                <div class="modal-body">
-                    <input type="text" placeholder="邮箱账号">
-                    <input type="text" placeholder="6-16为密码，区分大小写">
-                    <button>下一步</button>
-                </div>
-                <p class="first">我同意《服务条款》和《隐私保护和个人信息</p>
-                <p class="second">利用政策》</p>
-                <input type="checkbox" class="check">
+    <div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                    最新
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                    热点
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                    新闻
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                    公告
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <p>
+                    <span class="one">推荐</span>
+                    <b>游戏党必备好物，新人特价包邮</b>
+                </p>
+                <ul>
+                    <li>
+                        <img src="./images/official/icon-arror.png">
+                        [热点] 浓缩的才是精华盘点《我的世界》里越小越精致的神级建筑
+                    </li>
+                    <span>01/02</span>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./images/official/icon-arror.png">
+                        [热点] 《我的世界》2019年度热词评选 最后一个毫无疑问荣登榜首
+                    </li>
+                    <span>01/02</span>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./images/official/icon-arror.png">
+                        [热点] 《我的世界》2019年度大事件盘点，感谢你的陪伴！
+                    </li>
+                    <span>01/02</span>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./images/official/icon-arror.png">
+                        [热点] 《我的世界》新年史蒂夫必备的6种东西 未来的冒险全靠它们了
+                    </li>
+                    <span>01/02</span>
+                </ul>
             </div>
+            <div role="tabpanel" class="tab-pane" id="profile">aaa</div>
+            <div role="tabpanel" class="tab-pane" id="messages">..sdds.</div>
+            <div role="tabpanel" class="tab-pane" id="settings">..asdf.</div>
         </div>
-    </div>
 
+    </div>
 </body>
 <script src="./js/jquery-1.12.4.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>
+<script>
+    $('#myTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show')
+        }
+
+    )
+</script>
 
 </html>
