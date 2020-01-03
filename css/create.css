@@ -1,0 +1,174 @@
+body {
+  position: relative;
+}
+
+main {
+  width: 100%;
+  height: 668px;
+  background-image: url(../images/create/bg1.jpg);
+  background-size: 100%;
+}
+
+main header {
+  width: 100%;
+  height: 52px;
+  background-image: url(../images/create/top_bar_bg.png);
+  background-size: 100%;
+}
+
+main header a {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+main header a img {
+  width: 100%;
+  height: 100%;
+}
+
+main header .right {
+  float: right;
+  width: 76px;
+  height: 27px;
+  margin-right: 11px;
+  margin-top: calc((52px - 27px) / 2);
+}
+
+main header .right:nth-child(3) {
+  margin-right: 13px;
+}
+
+main .top1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 30px;
+}
+
+main .top1 img {
+  width: 330px;
+  height: 45px;
+}
+
+main .top2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+main .top2 a {
+  display: inline-block;
+  width: 131px;
+  height: 64px;
+  margin: 0 3px;
+  margin-bottom: 16px;
+}
+
+main .top2 a img {
+  width: 131px;
+  height: 64px;
+}
+
+main .top3 {
+  width: 100%;
+}
+
+main .top3 a {
+  display: block;
+  width: 236px;
+  height: 46px;
+  margin-left: calc((50% - 46px) / 2);
+}
+
+main .top3 a img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 86px;
+  line-height: 86px;
+  background-image: url(../images/create/footer.jpg);
+  background-size: 100%;
+}
+
+footer a {
+  float: left;
+  margin: 0 12px;
+}
+
+footer a i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #fff;
+}
+
+footer a span {
+  color: #fff;
+}
+
+footer a:nth-child(2) {
+  line-height: 92px;
+}
+
+footer a:nth-child(2) i {
+  font-size: 26px;
+}
+
+.bottom {
+  width: 100%;
+  color: #a7acb0;
+  background-color: #000;
+  padding: 20px 16px;
+}
+
+.bottom p {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.bottom p:nth-child(2) {
+  color: #fff;
+  font-size: 14px;
+}
+
+.bottom p:nth-last-child(2) {
+  font-size: 14px;
+}
+
+.bottom p:last-child {
+  color: #fff;
+  font-size: 14px;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 12px;
+  display: block;
+  right: 12px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #93979b;
+}
+
+.back-to-top span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-right: 4px solid #a7acb0;
+  border-top: 4px solid #a7acb0;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  margin-top: 18px;
+}
+/*# sourceMappingURL=create.css.map */

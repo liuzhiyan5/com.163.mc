@@ -9,206 +9,48 @@
     <link rel="stylesheet" href="./lib/normalize.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <style>
-        div {
-            font-size: 12px;
-            padding: 0 14px;
-        }
-
-        .nav-tabs {
-            border: none;
-        }
-
-        .nav-tabs li {
-            margin-right: 55px;
-        }
-
-        .nav-tabs li:last-child {
-            margin: 0;
-        }
-
-        .nav-tabs li a {
-            display: block;
+        .box {
             position: relative;
-            color: #262626;
-            padding: 10px 6px;
-            padding-bottom: 2px;
-            padding-left: 10px;
-        }
-
-        .nav-tabs li a::after {
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            display: block;
-            display: none;
-            content: '';
-            width: 52px;
-            height: 4px;
-            background-image: url(./images/official/tab-on.png);
-            background-size: 100%;
-        }
-
-        .nav-tabs>li.active>a,
-        .nav-tabs>li.active>a:focus,
-        .nav-tabs>li.active>a:hover {
-            color: #19931d;
-            cursor: default;
-            background-color: #fff;
-            border: none;
-            border-bottom-color: transparent;
-        }
-
-        .nav-tabs li.active a,
-        .nav-tabs li.active a:focus,
-        .nav-tabs li.active a:hover::after {
-            display: block;
-        }
-
-        .tab-content {
-            padding: 0;
-            margin-top: 10px;
-        }
-
-        .tab-content p {
-            position: relative;
-            background-color: #f5f7f9;
-            margin-bottom: 2px;
-        }
-
-        .tab-content .one {
-            display: inline-block;
-            width: 51px;
-            height: 32px;
-            color: #fff;
-            line-height: 32px;
-            text-align: center;
-            background-color: #28bd09;
-        }
-
-        .tab-content .one::after {
-            content: '';
-            border: 6px solid #28bd09;
-            position: absolute;
-            left: 50px;
-            top: 10px;
-            border-top-color: transparent;
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-        }
-
-        .tab-content b {
-            margin-left: 4px;
-        }
-
-        .tab-content ul {
-            margin-bottom: 0;
-            overflow: hidden;
-        }
-
-        .tab-content ul li img {
-            width: 5px;
-            height: 8px;
-            margin-right: 6px;
-        }
-
-        .tab-content ul li {
-            float: left;
-            width: 302px;
-            height: 32px;
-            line-height: 32px;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
-            overflow: hidden;
-        }
-
-        .tab-content ul span {
-            float: right;
-            color: #d1d1d1;
-            line-height: 32px;
-        }
-
-        .tab-pane {
-            padding: 0;
+            height: 200px;
+            width: calc(100% - 100px);
+            margin: 0 auto;
+            overflow-y: scroll;
         }
     </style>
 </head>
 
-<body>
-    <div>
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active">
-                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-                    最新
-                </a>
-            </li>
-            <li role="presentation">
-                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-                    热点
-                </a>
-            </li>
-            <li role="presentation">
-                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-                    新闻
-                </a>
-            </li>
-            <li role="presentation">
-                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
-                    公告
-                </a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">
-                <p>
-                    <span class="one">推荐</span>
-                    <b>游戏党必备好物，新人特价包邮</b>
-                </p>
-                <ul>
-                    <li>
-                        <img src="./images/official/icon-arror.png">
-                        [热点] 浓缩的才是精华盘点《我的世界》里越小越精致的神级建筑
-                    </li>
-                    <span>01/02</span>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="./images/official/icon-arror.png">
-                        [热点] 《我的世界》2019年度热词评选 最后一个毫无疑问荣登榜首
-                    </li>
-                    <span>01/02</span>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="./images/official/icon-arror.png">
-                        [热点] 《我的世界》2019年度大事件盘点，感谢你的陪伴！
-                    </li>
-                    <span>01/02</span>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="./images/official/icon-arror.png">
-                        [热点] 《我的世界》新年史蒂夫必备的6种东西 未来的冒险全靠它们了
-                    </li>
-                    <span>01/02</span>
-                </ul>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="profile">aaa</div>
-            <div role="tabpanel" class="tab-pane" id="messages">..sdds.</div>
-            <div role="tabpanel" class="tab-pane" id="settings">..asdf.</div>
-        </div>
-
+<div class="bs-example" data-example-id="embedded-scrollspy">
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example  box">
+        <p>
+            《我的世界》作为一款自由建造的沙盒游戏，吸引了全球玩家的喜爱。同时，《我的世界》中国版力求打造成为中国顶尖的UGC游戏平台，吸引优秀开发者基于《我的世界》创作出属于自己的游戏。
+        </p>
+        <h4>成为开发者的好处</h4>
+        <p>
+            1、优质的玩法内容在《我的世界》中国版上架，获得2亿+玩家的认可和喜爱；
+        </p>
+        <p>
+            2、官方版权保护，官方针对抄袭、盗版打击力度严厉，保障开发者合法权益；
+        </p>
+        <p>
+            3、官方提供便捷开发工具，开放底层接口，提供完善技术支持；
+        </p>
+        <p>
+            4、大比例收入分成，每月定期结算。
+        </p>
+        <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda.
+            Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie
+            gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch
+            nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade
+            velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+        </p>
     </div>
-</body>
+</div>
 <script src="./js/jquery-1.12.4.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>
 <script>
-    $('#myTabs a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show')
-        }
-
-    )
+    $('body').scrollspy({
+        target: '#navbar-example'
+    })
 </script>
 
 </html>

@@ -2,7 +2,7 @@ body {
     position: relative;
 }
 
-// 许可协议头部开始
+// 官网头部开始
 header {
     position: relative;
     width: 100%;
@@ -28,19 +28,20 @@ header {
         right: 0;
         width: 160px;
         height: 50px;
+        z-index: 2;
 
         img {
             width: 100%;
             height: 65px;
-            z-index: 1;
         }
     }
 }
 
-// 许可协议头部结束
+// 官网头部结束
 
 // 通告栏开始
 .backbox {
+    position: relative;
     width: 100%;
     height: 50px;
     background-image: url(../images/agreement/backBg.jpg);
@@ -69,10 +70,23 @@ header {
 
         span {
             padding: 0 1px;
+        }
+    }
 
-            &:nth-child(2n) {
-                font-weight: 700;
-            }
+    select {
+        position: absolute;
+        top: 50%;
+        right: 104px;
+        width: 125px;
+        height: 29px;
+        color: #3d6f55;
+        background-color: #a2df6c;
+        padding-left: 4px;
+        margin-top: calc(-29px / 2);
+        z-index: 1;
+
+        option {
+            color: #3d6f55;
         }
     }
 
@@ -98,363 +112,135 @@ header {
 // 主体内容开始
 main {
     width: 100%;
-    padding: 0 13px;
+    height: 518px;
+    padding: 0 15px;
+    box-sizing: border-box;
 
-    .subject {
+    .tujian {
         width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #eaeaea;
-        margin-top: 28px;
+        margin-top: 5px;
+        overflow: hidden;
 
-        h1 {
-            color: #249f0b;
-            font-size: 17px;
-            font-weight: 700;
-            margin: 0;
+        img {
+            float: left;
+            width: 145px;
+            height: 145px;
         }
 
-        p {
-            color: #999;
-            margin-top: 6px;
-        }
-    }
+        .cake {
+            float: left;
+            margin-left: 18px;
 
-    .preface {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        p:nth-child(2) {
-            margin: 22px 0;
-            margin-top: 24px;
-        }
-
-        p:nth-child(3) {
-            line-height: 26px;
-        }
-    }
-
-    .important {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-
-            &:nth-child(3) {
-                color: #ff0000;
-            }
-        }
-    }
-
-    .sign {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-
-            &:nth-child(2) {
-                margin: 22px 0;
-                margin-top: 24px;
-            }
-        }
-    }
-
-    .definition {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            margin-bottom: 15px;
-
-            &:nth-child(2) {
-                margin: 22px 0;
-                margin-top: 24px;
-            }
-        }
-    }
-
-    .account {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-
-            &:nth-child(2),
-            &:nth-child(4) {
-                margin: 22px 0;
-                margin-top: 24px;
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                border-bottom: 1px solid #eeeeee;
+                padding-bottom: 6px;
+                margin-bottom: 3px;
             }
 
-            &:nth-child(3) {
-                color: #ff0000;
+            span {
                 font-size: 12px;
             }
         }
     }
 
-    .knowledge {
-        width: 100%;
+    .formula {
+        margin: 35px 23px;
+        margin-bottom: 30px;
 
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
+        h4 {
+            border-bottom: 1px solid #e7e7e7;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
         }
 
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
+        .zong-h {
+            overflow: hidden;
 
-            &:nth-child(2),
-            &:nth-child(8) {
-                margin: 22px 0;
-                margin-top: 24px;
+            .left {
+                float: left;
+                width: 98px;
+                height: 98px;
+                margin-left: 59px;
+
+                span {
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #a96d44;
+                    margin-right: 4px;
+                    margin-bottom: 4px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:nth-child(3),
+                    &:nth-child(6),
+                    &:nth-child(9) {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .center {
+                float: left;
+                width: 6px;
+                height: 10px;
+                line-height: 98px;
+                margin-left: 16px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .right {
+                float: right;
+                width: 80px;
+                height: 80px;
+                background-color: #a96d44;
+                margin-top: 8px;
+                margin-right: 25px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
 
-    .restriction {
+    .type {
         width: 100%;
+        height: 145px;
 
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 26px;
-        }
+        a {
+            float: left;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background-color: #d7a268;
+            margin-right: 5px;
+            margin-bottom: 5px;
 
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-
-            &:nth-child(28),
-            &:nth-child(30),
-            &:nth-child(31) {
-                color: #ff0000;
-                font-size: 12px;
+            img {
+                width: 39px;
+                height: 39px;
             }
-        }
-    }
 
-    .cost {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-
-            &:nth-child(10),
+            &:nth-child(7),
             &:nth-child(14) {
-                color: #ff0000;
-                font-size: 12px;
+                margin-right: 0;
             }
-        }
-    }
-
-    .protect {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .interrupt {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-
-            &:nth-child(-n+4),
-            &:nth-last-child(-n+8) {
-                color: #ff0000;
-                font-size: 12px;
-            }
-        }
-    }
-
-    .link {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .change {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #ff0000;
-            font-size: 12px;
-            line-height: 26px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .data {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .notice {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .other {
-        width: 100%;
-
-        h3 {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            width: 100%;
-            color: #555;
-            font-size: 14px;
-            line-height: 26px;
-            margin-bottom: 15px;
 
             &:nth-child(2) {
-                color: #ff0000;
-                font-size: 12px;
+                line-height: 39px;
+                border: 3px solid #33b916;
             }
         }
     }
@@ -680,7 +466,7 @@ footer {
 // 首页底部结束
 
 // 题外话开始
-.bottom {
+.bottom-last {
     width: 100%;
     color: #6e6e6e;
     padding: 20px 16px;
@@ -707,10 +493,10 @@ footer {
 
     span {
         display: inline-block;
-        width: 26px;
-        height: 26px;
-        border-right: 4px solid #a7acb0;
-        border-top: 4px solid #a7acb0;
+        width: 24px;
+        height: 24px;
+        border-right: 4px solid #77787e;
+        border-top: 4px solid #77787e;
         transform: rotateZ(-45deg);
         margin-top: 18px;
     }
