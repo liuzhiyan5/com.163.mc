@@ -1,0 +1,136 @@
+body {
+  position: relative;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background-image: url(../images/agreement/top-bg.jpg);
+}
+
+header a:first-child {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  width: 100px;
+  height: 38px;
+}
+
+header a:first-child img {
+  width: 100%;
+  height: 100%;
+}
+
+header a:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 50px;
+}
+
+header a:last-child img {
+  width: 100%;
+  height: 65px;
+  z-index: 1;
+}
+
+.backbox {
+  width: 100%;
+  height: 50px;
+  background-image: url(../images/agreement/backBg.jpg);
+  background-size: 100%;
+}
+
+.backbox a {
+  display: block;
+  float: left;
+  width: 15px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.backbox a img {
+  width: 100%;
+  height: 100%;
+}
+
+.backbox .navswrap {
+  float: left;
+  height: 100%;
+  font-size: 12px;
+  line-height: 50px;
+  margin-left: 24px;
+}
+
+.backbox .navswrap span {
+  padding: 0 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.backbox .navswrap span:nth-child(2n) {
+  font-weight: 700;
+}
+
+.backbox .last1 {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: calc((50px / 2) - 15px);
+  margin-right: 28px;
+}
+
+.backbox .last2 {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: calc((50px / 2) - 15px);
+  margin-right: 8px;
+}
+
+main {
+  width: 100%;
+  padding: 0 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .subject {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 28px;
+  margin-bottom: 18px;
+}
+
+main .subject h1 {
+  color: #249f0b;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+main .subject p {
+  color: #999;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+main .nr {
+  line-height: 27px;
+  margin-top: 18px;
+  margin-bottom: 14px;
+}
+
+main img {
+  width: 348px;
+  height: 202px;
+}
+
+main .center {
+  text-align: center;
+}
+/*# sourceMappingURL=xb3.css.map */

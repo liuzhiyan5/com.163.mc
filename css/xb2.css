@@ -2,6 +2,11 @@ body {
   position: relative;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -92,6 +97,8 @@ header a:last-child img {
 main {
   width: 100%;
   padding: 0 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .subject {
@@ -382,4 +389,4 @@ footer .phonebox span {
           transform: rotateZ(-45deg);
   margin-top: 18px;
 }
-/*# sourceMappingURL=xb1.css.map */
+/*# sourceMappingURL=xb2.css.map */
