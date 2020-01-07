@@ -2,11 +2,6 @@ body {
   position: relative;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 header {
   position: relative;
   width: 100%;
@@ -72,6 +67,8 @@ header a:last-child img {
 
 .backbox .navswrap span {
   padding: 0 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .backbox .navswrap span:nth-child(2n) {
@@ -135,6 +132,10 @@ main img {
 
 main .center {
   text-align: center;
+}
+
+main .pic1 {
+  margin-bottom: 20px;
 }
 
 footer {
@@ -389,4 +390,4 @@ footer .phonebox span {
           transform: rotateZ(-45deg);
   margin-top: 18px;
 }
-/*# sourceMappingURL=xb2.css.map */
+/*# sourceMappingURL=xb4.css.map */
